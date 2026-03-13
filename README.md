@@ -11,16 +11,6 @@ A simple REST API built using **Spring Boot** and **Spring Data JPA** to manage 
 - Maven
 - Lombok
 
-## Project Structure
-├── controller
-│ └── StudentController
-├── entity
-│ └── Student
-├── repository
-│ └── StudentRepository
-├── service
-│ └── StudentService
-
 ## API Endpoints
 
 | Method | Endpoint | Description |
