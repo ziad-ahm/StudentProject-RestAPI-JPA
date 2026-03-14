@@ -21,13 +21,10 @@ public class StudentService {
         return Repo.findById(id) .orElse(null);
     }
 
-    public Student save(Student student) {
+    public Student save_update(Student student) {
         return Repo.save(student);
     }
 
-    public Student update(Student student) {
-        return Repo.save(student);
-    }
     public void Delete(int id) {
          Repo.deleteById(id);
     }

@@ -25,12 +25,15 @@ public class StudentController {
 
     @PostMapping("/students")
     public Student save(@RequestBody Student student) {
-        return Service.save(student);
+        return Service.save_update(student);
     }
 
-    @PutMapping("/students")
-    public Student update(@RequestBody Student student) {
-        return Service.update(student);
+    @PutMapping("/students/{id}")
+    public Student update(@PathVariable int id, @RequestBody Student student) {
+
+        student.setStudentId(id);
+
+        return Service.save_update(student);
     }
 
     @DeleteMapping("/students/{id}")
